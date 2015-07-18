@@ -10,25 +10,31 @@ module GemMiniTest
       end
     end
 
-
-     def check_number?(s)
+    def check_number?(s)
       if  (s.to_i/1000 != 0) && (s.to_i%2 == 0) 
-        return true
-      else
-        return false
-      end
-     end
-
-    def enough_length?(s)
-      if s.length >= 3
-        return true
-      elsif   s.length <= 8
         return true
       else
         return false
       end
     end
 
+    def enough_length?(s)
+      if s.length >= 3 && s.length <= 8
+        return true
+      else
+        return false
+      end
+    end
+
+    def fizz_buzz(n)
+      if n == 15
+        "FizzBuzz"
+      elsif n == 5
+        "Buzz"
+      else n == 3
+        "Fizz"
+      end
+    end
 
   end
 end

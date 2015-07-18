@@ -7,7 +7,7 @@ class GemMiniTestTest < Minitest::Test
   end
 
   def test_that_it_has_a_version_number
-    refute_nil ::GemMiniTest::VERSION
+     refute_nil ::GemMiniTest::VERSION
   end
 
   def test_odd?
@@ -23,10 +23,15 @@ class GemMiniTestTest < Minitest::Test
 
   def test_enough_length?
     assert @num2.enough_length?("12345678") == true, "3-8ji"
-    assert @num2.enough_length?("12"), "not 3-8ji"
-    assert @num2.enough_length?("123456789"), "not 3-8ji"
+    refute @num2.enough_length?("12"), "not 3-8ji"
+    refute @num2.enough_length?("123456789"), "not 3-8ji"
   end
 
+  def test_fizz_buzz
+    assert @num.fizz_buzz(15)=="FizzBuzz", "FizzBuzz"
+    assert @num.fizz_buzz(5)=="Buzz" , "Buzz"
+    assert @num.fizz_buzz(3)=="Fizz" , "Fizz"
+  end
 
 
 end
