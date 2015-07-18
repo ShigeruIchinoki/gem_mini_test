@@ -36,5 +36,15 @@ module GemMiniTest
       end
     end
 
+    def divide(a,b)
+      a/b
+    rescue ZeroDivisionError => ex
+      puts "#{ex}"
+    end
+
+    def putshello
+      puts "Hello"
+    end
+
   end
 end

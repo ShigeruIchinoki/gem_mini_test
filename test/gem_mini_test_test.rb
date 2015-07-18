@@ -33,5 +33,13 @@ class GemMiniTestTest < Minitest::Test
     assert @num.fizz_buzz(3)=="Fizz" , "Fizz"
   end
 
+  def test_divide
+    refute @num.divide(1, 0), "divided by 0"
+    assert @num.divide(1, 1), "OK"
+  end
+
+  def test_putshello
+    refute @num.putshello == "", "No puts Hello"
+  end
 
 end
