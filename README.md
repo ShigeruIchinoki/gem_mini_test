@@ -4,6 +4,8 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 https://travis-ci.org/ShigeruIchinoki/gem_mini_test.svg
 
+!https://travis-ci.org/ShigeruIchinoki/gem_mini_test.svg!:https://travis-ci.org/ShigeruIchinoki/gem_mini_test
+
 ## Installation
 
 Add this line to your application's Gemfile:
