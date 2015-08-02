@@ -4,7 +4,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 
 [![Build Status](https://travis-ci.org/ShigeruIchinoki/gem_mini_test.svg)](https://travis-ci.org/ShigeruIchinoki/gem_mini_test) 
-
+Label 
 
 
 ## Installation
